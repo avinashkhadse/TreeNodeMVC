@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.34031.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeNodeMVC", "TreeNodeMVC\TreeNodeMVC.csproj", "{37C15E84-5C2B-4656-ADEE-15993EC72A11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37C15E84-5C2B-4656-ADEE-15993EC72A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C15E84-5C2B-4656-ADEE-15993EC72A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C15E84-5C2B-4656-ADEE-15993EC72A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C15E84-5C2B-4656-ADEE-15993EC72A11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7DE4E71-27D6-4E96-8E25-DDD259C6156C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "TreeView";
+}
+
+<h2>TreeView</h2>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" rel="stylesheet" />
+
+<div class="form-body">
+    <div id="jstree"></div>
+</div>
+
+@section scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+    <script>
+        $(function () {
+            $('#jstree').jstree({
+                'core': {
+                    'data': {
+                        'url': '@Url.Action("GetTreeNodes", "Home")',
+                        'dataType': 'json'
+                    }
+                }
+            });
+        });
+    </script>
+}
