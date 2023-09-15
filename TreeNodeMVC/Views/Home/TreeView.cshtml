@@ -3,6 +3,7 @@
 }
 
 <h2>TreeView</h2>
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" rel="stylesheet" />
 
 <div class="form-body">
@@ -19,8 +20,13 @@
                     'data': {
                         'url': '@Url.Action("GetTreeNodes", "Home")',
                         'dataType': 'json'
-                    }
-                }
+                    },
+                    'themes': {
+                        'icons': false
+                    },
+                    'check_callback': true
+                },
+                'plugins': ['checkbox']
             });
         });
     </script>

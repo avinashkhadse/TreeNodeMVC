@@ -183,6 +183,10 @@
     <Compile Include="Migrations\202309142004135_Second.designer.cs">
       <DependentUpon>202309142004135_Second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309151831397_Third.cs" />
+    <Compile Include="Migrations\202309151831397_Third.designer.cs">
+      <DependentUpon>202309151831397_Third.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\jsTree.cs" />
@@ -265,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309142004135_Second.resx">
       <DependentUpon>202309142004135_Second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309151831397_Third.resx">
+      <DependentUpon>202309151831397_Third.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

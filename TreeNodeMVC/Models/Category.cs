@@ -21,6 +21,6 @@ namespace TreeNodeMVC.Models
 
         public virtual Category Parent { get; set; }
 
-        public virtual ICollection<Category> Childs { get; set; }
+        public virtual ICollection<Category> Children { get; set; }
     }
 }

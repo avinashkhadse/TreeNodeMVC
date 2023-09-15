@@ -19,7 +19,6 @@ namespace TreeNodeMVC.Controllers
             return View();
         }
 
-        // Action to fetch all nodes
         public ActionResult GetTreeNodes()
         {
             var nodes = db.Categories.ToList();
@@ -31,6 +30,34 @@ namespace TreeNodeMVC.Controllers
                     text = n.Name,
                     children = GetChildren(nodes, n.ID)
                 }).ToList();
+
+            var fruitNode = new Child
+            {
+                id = "fruit",
+                text = "Fruit",
+                children = new List<Child>
+        {
+            new Child { id = "apple", text = "Apple" },
+            new Child { id = "mango", text = "Mango" }
+        }
+            };
+
+            // Add Vegetable node
+            var vegetableNode = new Child
+            {
+                id = "vegetable",
+                text = "Vegetable",
+                children = new List<Child>
+        {
+            new Child { id = "salad", text = "Salad" },
+            new Child { id = "potato", text = "Potato" },
+            new Child { id = "mushroom", text = "Mushroom" }
+        }
+            };
+
+            treeNodes.Add(fruitNode);
+            treeNodes.Add(vegetableNode);
+
 
             return Json(treeNodes, JsonRequestBehavior.AllowGet);
         }
